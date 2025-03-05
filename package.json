@@ -4,9 +4,9 @@
   "description": "A React application that displays real-time statistics from the Coinbase API.",
   "main": "src/index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "keywords": [
@@ -19,10 +19,20 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.27.2",
+    "buffer": "^6.0.3",
+    "coinbase": "^2.0.8",
+    "crypto-js": "^4.2.0",
     "dotenv": "^16.4.7",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
     "react": "^18.0.0",
+    "react-app-rewired": "^2.2.1",
     "react-dom": "^18.0.0",
-    "react-scripts": "5.0.0"
+    "react-scripts": "5.0.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.4"
   },
   "devDependencies": {
     "eslint": "^8.0.0",
