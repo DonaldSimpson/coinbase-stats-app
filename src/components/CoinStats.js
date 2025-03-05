@@ -13,6 +13,7 @@ const CoinStats = () => {
           headers: {
             'CB-ACCESS-KEY': process.env.REACT_APP_COINBASE_API_KEY,
             'CB-ACCESS-SIGN': process.env.REACT_APP_COINBASE_API_SECRET,
+            'CB-ACCESS-TIMESTAMP': Math.floor(Date.now() / 1000),
             'CB-VERSION': '2021-03-05'
           }
         });
